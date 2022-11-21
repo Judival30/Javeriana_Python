@@ -204,16 +204,6 @@ def game(listaPcOculta, listaPcPantalla, ListaPJ, nombreJugador, flip):
                 turnos += 1
             showBoard(ListaPJ, listaPcPantalla, nombreJugador)
 
-            # Para poder probar que el juego termina
-
-            print("===== Modo administrador =====")
-
-            # Ensayoo
-            for i in range(len(listaPcOculta)):
-                for j in range(len(listaPcOculta)):
-                    print(listaPcOculta[i][j], end=" ")
-                print()
-
     else:
         while barcosPc > 0 and barcosPj > 0:
             print("Disparo Pc:")
@@ -276,14 +266,6 @@ def game(listaPcOculta, listaPcPantalla, ListaPJ, nombreJugador, flip):
                 listaPcOculta[filaDisparoPJ][columnaDisparoPj] = "X"
                 listaPcPantalla[filaDisparoPJ][columnaDisparoPj] = "X"
             showBoard(ListaPJ, listaPcPantalla, nombreJugador)
-
-            print("===== Modo administrador =====")
-
-            # Ensayoo
-            for i in range(len(listaPcOculta)):
-                for j in range(len(listaPcOculta)):
-                    print(listaPcOculta[i][j], end=" ")
-                print()
 
     if barcosPc == 0:
         if nombreJugador == "":
